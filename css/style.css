@@ -53,9 +53,10 @@ body {
   margin: 0.5rem 0rem;
 }
 
-.navbar .box-navbar .box:nth-child(1) h1 {
+.navbar .box-navbar .box:nth-child(1) a {
   font-size: 2rem;
   color: white;
+  font-weight: 600;
 }
 
 /* style box number 2 ul */
@@ -265,12 +266,14 @@ header .hero h1 span {
   padding: 3rem;
 }
 
+.verified .container h2,
 .about h1,
 .product h1,
 .contact h1 {
   text-align: center;
-  padding-bottom: 2rem;
-  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .mySwiper {
@@ -599,12 +602,32 @@ footer .container {
     font-size: 38%;
   }
 
+  .navbar {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .navbar .box-navbar .box:nth-child(1) a {
+    font-size: 22px;
+  }
+
+  .navbar .navbar .box-navbar .box:nth-child(3) {
+    background: red;
+  }
+
+  .navbar .box-navbar .box:nth-child(3) a {
+    color: white;
+    font-size: 8px;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  }
+
   header .hero h1 {
-    font-size: 35px;
+    font-size: 28px;
   }
 
   .about .container .box-about .box:nth-child(1) p {
-    font-size: 38%;
+    font-size: 15px;
     font-weight: 400;
     line-height: 2.1;
   }
@@ -622,10 +645,6 @@ footer .container {
   .verified .container .images img {
     width: 50%;
     height: 50%;
-  }
-
-  swiper-container {
-    navigation: "true";
   }
 
   .contact .container .wrapper {
