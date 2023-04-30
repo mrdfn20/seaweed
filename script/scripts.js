@@ -1,23 +1,65 @@
 const menuBar = document.querySelector("#hamburger-menu");
-// remix icon item
-// const menuBar = document.querySelector(".hamburger-menu");
 const menuNavbar = document.querySelector(".menu-navbar");
 
-// sama aja dua baris kode dibawah
+// same(1)
 menuBar.onclick = () => {
   menuNavbar.classList.toggle("menu-active");
 };
 
+// same(2)
 // menuBar.addEventListener("click", function () {
 //   menuNavbar.classList.toggle("menu-active");
 // });
 
-// // swiper
-// var swiper = new Swiper(".slide-container", {
+// swiper
+const swiperEl = document.querySelector("swiper-container");
+
+const parameters = {
+  centeredSlides: false,
+  slidesPerGroupSkip: 1,
+  spaceBetween: 20,
+  grabCursor: true,
+  keyboard: {
+    enable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
+  },
+  scrollBar: true,
+  navigation: true,
+  pagination: {
+    clickable: true,
+  },
+};
+
+Object.assign(swiperEl, parameters);
+swiperEl.initialize();
+
+// property swiper-container htlml
+// pagination="true"
+//         pagination-clickable="true"
+//         navigation="true"
+//         pagination-dynamic-bullets="true"
+//         space-between="30"
+//         slides-per-view="3"
+//         loop="false"
+
+// var swiper = new Swiper(".swiper-slide", {
 //   slidesPerView: 4,
 //   spaceBetween: 20,
 //   sliderPerGroup: 4,
-//   loop: true,
+//   // loop: true,
 //   centerSlide: "true",
 //   fade: "true",
 //   grabCursor: "true",

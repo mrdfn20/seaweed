@@ -192,80 +192,6 @@ header .hero h1 span {
   margin-left: 5rem;
 }
 
-/* product section */
-
-/* responsive card slider  */
-
-/* .product .container {
-  max-width: 1120px;
-  width: 100%;
-  padding: 40px 0;
-}
-
-.slide-container {
-  margin: 0 30px;
-  overflow: hidden;
-}
-
-.card {
-  background-color: rgba(201, 201, 201, 0.5);
-  border-radius: 8px;
-  width: 20rem;
-  height: 33rem;
-}
-
-.card .image-box {
-  width: 20rem;
-}
-
-.card .image-box img {
-  width: 100%;
-  height: 50%;
-  border-radius: 8px 8px 0 0;
-  background-size: cover;
-}
-
-.card .product-name {
-  display: flex;
-  flex-direction: column;
-  column-gap: 12px;
-  padding: 15px;
-  word-wrap: break-word;
-}
-
-.card .product-name h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.card .product-name h3 {
-  font-size: 14px;
-  font-weight: 300;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: justify;
-}
-
-.card .more-button {
-  display: flex;
-  justify-content: center;
-}
-
-.card .more-button a {
-  display: flex;
-  background: var(--primary);
-  color: white;
-  border-radius: 4%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-} */
-
-.product {
-  padding: 3rem;
-}
-
 .verified .container h2,
 .about h1,
 .product h1,
@@ -274,6 +200,13 @@ header .hero h1 span {
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
   font-weight: 700;
+}
+/* product section */
+
+/* responsive card slider  */
+
+.product {
+  padding: 3rem;
 }
 
 .mySwiper {
@@ -325,10 +258,10 @@ swiper-slide .product-name h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
 swiper-slide .product-name h3 {
   /* max-inline-size: 30px; */
-  display: -webkit-box; /* line break */
+  /* line break */
+  display: -webkit-box;
   -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden;
