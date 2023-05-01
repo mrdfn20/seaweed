@@ -33,7 +33,7 @@ const parameters = {
   },
   breakpoints: {
     0: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     520: {
       slidesPerView: 2,

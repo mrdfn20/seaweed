@@ -291,6 +291,7 @@ swiper-slide .product-name h3 {
 }
 
 .btn-more {
+  display: block;
   margin-bottom: 2rem;
 }
 
@@ -604,7 +605,10 @@ footer .container {
     font-size: 10px;
   }
 
-  .product .mySwiper {
+  .mySwiper {
+    width: 40rem;
+    height: 45rem;
+    padding: 2rem;
   }
 
   swiper-slide {
@@ -618,7 +622,7 @@ footer .container {
     border-radius: 3%;
   }
 
-  .wrapper {
+  .mySwiper .wrapper {
     flex: 1 1 auto;
   }
 
@@ -630,8 +634,8 @@ footer .container {
 
   swiper-slide .image-box img {
     display: flex;
-    height: 12rem;
-    width: 15rem;
+    height: 20rem;
+    width: 33rem;
     border-radius: 2%;
     border: solid white;
     margin-top: 1.5rem;
@@ -648,33 +652,14 @@ footer .container {
   }
 
   swiper-slide .product-name h2 {
+    font-size: 13px;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
   swiper-slide .product-name h3 {
-    /* max-inline-size: 30px; */
-    /* line break */
-    display: -webkit-box;
-    -webkit-line-clamp: 7;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 400;
     text-align: center;
-  }
-
-  .product-name .btn-more {
-    margin-top: 3rem;
-  }
-
-  .btn-more a {
-    display: flex;
-    background: var(--primary);
-    color: white;
-    padding: 1rem 1rem 1rem 1rem;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
   }
 
   .contact .container .wrapper {
