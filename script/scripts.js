@@ -11,6 +11,15 @@ menuBar.onclick = () => {
 //   menuNavbar.classList.toggle("menu-active");
 // });
 
+// if click outside menunavbar ,will closed menunavbar
+// document.addEventListener("click", (e) => {
+//   if (!menubar.contains(e.target) && !menuNavbar.contains(e.target)) {
+//     console.log("worked");
+
+//     menuNavbar.classList.remove("menu-active");
+//   }
+// });
+
 // swiper
 const swiperEl = document.querySelector("swiper-container");
 
@@ -24,7 +33,7 @@ const parameters = {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     520: {
       slidesPerView: 2,
