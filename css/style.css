@@ -38,7 +38,7 @@ body {
   padding: 1rem 0 1rem 0;
 }
 
-.container {
+.navbar .container {
   width: 90%;
   margin-inline: auto;
 }
@@ -346,12 +346,20 @@ swiper-slide .product-name h3 {
   color: white;
 }
 
-.contact-details .box h3 {
+.contact-details .box a {
   text-align: center;
   margin-inline-start: 2rem;
   color: white;
   text-align: left;
   font-weight: 500;
+}
+
+.contact-details .box a:hover {
+  color: black;
+}
+
+.contact-details .box .fa-xl {
+  color: white;
 }
 
 .contact-field .btn-sbmt {
@@ -387,6 +395,40 @@ swiper-slide .product-name h3 {
 
 .input-group i {
   margin-inline-end: 1.5rem;
+}
+
+.whatsapp-cta-container {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+}
+
+.whatsapp-cta-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.whatsapp-cta-container a {
+  position: relative;
+  text-decoration: none;
+  font-size: 70px;
+  color: #50f366;
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0 0 10px #000a;
+  border: 2px solid #50f366;
+  z-index: 9999; /*should be greater than all other elements of webpage*/
+  transition: 0.3s;
+}
+
+.whatsapp-cta-container a:hover {
+  transform: scale(1.1) translate(-2px, -3px) rotateZ(-10deg);
 }
 
 footer .container {
@@ -551,9 +593,13 @@ footer .container {
   .about .box-about .box:nth-child(1) p {
     text-align: left;
   }
+
+  .whatsapp-cta-container a {
+    font-size: 50px;
+  }
 }
 /* mobile */
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 415px) {
   html {
     font-size: 38%;
   }
@@ -739,14 +785,21 @@ footer .container {
     font-size: 2.5rem;
   }
 
-  .contact-details .box h3 {
+  .contact-details .box a {
     font-size: 15px;
+    color: white;
+    margin-inline-start: 1.5rem;
   }
 
   .contact-details .box .fa-xl {
     font-size: 3.5rem;
     color: white;
   }
+
+  .whatsapp-cta-container a {
+    font-size: 40px;
+  }
+
   footer .container .menu-box {
     padding: 5rem 0 2rem 0;
     background: var(--primary);
