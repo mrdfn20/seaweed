@@ -303,6 +303,7 @@ swiper-slide .product-name h3 {
   align-items: center;
   justify-content: center;
   align-items: center;
+  border-radius: 5%;
 }
 
 .contact {
