@@ -211,6 +211,7 @@ header .hero h1 span {
 .box-about .box:nth-child(1) p {
   line-height: 1.7;
   text-indent: 25px;
+  text-align: justify;
 }
 
 .box-about .box:nth-child(2) img {
@@ -253,6 +254,11 @@ swiper-slide {
   background: #c0c0c060;
   border-radius: 3%;
   box-shadow: 2px 2px 4px rgba(1, 1, 3, 0.5);
+  transition: 0.3s;
+}
+
+swiper-slide:hover {
+  transform: scale(1.01);
 }
 
 .wrapper {
@@ -275,6 +281,7 @@ swiper-slide .image-box img {
   object-fit: cover;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 4px rgba(1, 1, 3, 0.5);
 }
 
 .product-name {
@@ -296,8 +303,10 @@ swiper-slide .product-name h3 {
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
+  margin: 0 1rem 0 1rem;
+  text-align: justify;
 }
 
 .btn-more {
@@ -626,12 +635,6 @@ footer .container {
     font-size: 38%;
   }
 
-  body {
-    /* margin-left: 15px; */
-    /* margin-right: 15px; */
-    margin-bottom: 25px;
-  }
-
   .navbar {
     padding: 2rem 0 1rem 0;
   }
@@ -735,10 +738,15 @@ footer .container {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
   swiper-slide .product-name h3 {
     font-size: 10px;
     font-weight: 400;
     text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .contact .container .wrapper {
