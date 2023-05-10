@@ -21,7 +21,7 @@ menuBar.onclick = () => {
 // });
 
 // swiper
-const swiperEl = document.querySelector("swiper-container");
+const swiperEl = document.querySelector("mySwiper");
 
 const parameters = {
   centeredSlides: false,

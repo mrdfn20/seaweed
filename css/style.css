@@ -54,6 +54,17 @@ body {
   margin: 0.5rem 0rem;
 }
 
+.box:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .box-navbar .box:nth-child(1) img {
+  width: 8rem;
+  margin-right: 0rem;
+}
+
 .navbar .box-navbar .box:nth-child(1) a {
   font-size: 2rem;
   color: white;
