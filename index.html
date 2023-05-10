@@ -287,25 +287,51 @@
             <form action="">
               <div class="input-group">
                 <i class="fa-solid fa-user fa-xl" style="color: #000000"></i>
-                <input type="text" placeholder="Name" />
+                <input
+                  type="text"
+                  placeholder="Name"
+                  maxlength="70"
+                  size="70"
+                />
               </div>
 
               <div class="input-group">
                 <i class="fa-solid fa-envelope fa-xl"></i>
-                <input type="text" placeholder="E-mail" />
+                <input
+                  type="text"
+                  placeholder="E-mail"
+                  maxlength="70"
+                  size="70"
+                />
               </div>
 
               <div class="input-group">
                 <i class="fa-solid fa-s fa-xl"></i>
-                <input type="text" placeholder="Subject" />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  maxlength="70"
+                  size="70"
+                />
               </div>
 
               <div class="input-group">
                 <i class="fa-solid fa-message fa-xl"></i>
-                <input type="text" placeholder="Message" />
+                <div class="wrapper">
+                  <textarea
+                    placeholder="Message"
+                    rows="1"
+                    cols="92"
+                    name="usrtxt"
+                    wrap="hard"
+                  >
+                  </textarea>
+                </div>
               </div>
-              <button type="submit" class="btn-sbmt">Send</button>
             </form>
+            <div class="button-wrapper">
+              <button type="submit" class="btn-sbmt">Send</button>
+            </div>
           </div>
 
           <div
@@ -338,6 +364,16 @@
               >
             </div>
           </div>
+        </div>
+
+        <div class="map-wrapper">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31816.53611830941!2d119.59555529818142!3d-4.581989926229233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbe3a886c8bb703%3A0xaa2913e55ec4e828!2sCoppo%20Tompong%2C%20Mandalle%2C%20Pangkajene%20and%20Islands%20Regency%2C%20South%20Sulawesi!5e0!3m2!1sen!2sid!4v1683697833439!5m2!1sen!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </section>

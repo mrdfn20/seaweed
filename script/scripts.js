@@ -21,16 +21,13 @@ menuBar.onclick = () => {
 // });
 
 // swiper
-const swiperEl = document.querySelector("mySwiper");
+const swiperEl = document.querySelector("swiper-container");
 
 const parameters = {
   centeredSlides: false,
   slidesPerGroupSkip: 1,
   spaceBetween: 20,
   grabCursor: true,
-  keyboard: {
-    enable: true,
-  },
   breakpoints: {
     0: {
       slidesPerView: 1,
